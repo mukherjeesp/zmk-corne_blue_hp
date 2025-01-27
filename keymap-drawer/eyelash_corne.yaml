@@ -50,11 +50,11 @@ layers:
   - $$mdi:apple-keyboard-option$$
   NUMBER:
   - $$mdi:keyboard-esc$$
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
+  - {t: '`', s: '~'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: \, s: '|'}
+  - {t: '=', s: +}
+  - {t: '-', s: _}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
@@ -63,26 +63,26 @@ layers:
   - END
   - $$mdi:backspace-reverse-outline$$
   - $$mdi:apple-keyboard-shift$$
-  - BT CLR ALL
-  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - PgUp
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - '4'
   - {t: '5', s: '%'}
   - '6'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&a02dfs'
   - $$mdi:arrow-up-bold$$
-  - PG UP
   - {t: '$$mdi:transfer$$', type: trans}
-  - RGB OFF
-  - RGB ON
   - {t: '$$mdi:transfer$$', type: trans}
-  - RGB EFR
-  - RGB EFF
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - PgDn
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - '1'
@@ -91,11 +91,11 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - LEFT WIN
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '0', s: )}
   SYMBOL:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -105,7 +105,7 @@ layers:
   - $
   - '%'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - ^
+  - F7
   - '&'
   - '*'
   - (
@@ -120,8 +120,8 @@ layers:
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - {t: '-', s: _}
-  - {t: '=', s: +}
+  - F4
+  - F5
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - {t: \, s: '|'}
@@ -147,25 +147,25 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   Fn:
-  - '&studio_unlock'
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
+  - RGB OFF
+  - RGB ON
+  - RGB EFR
+  - RGB EFF
+  - RGB BRI
+  - RGB BRD
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - F6
   - F7
   - F8
   - F9
   - F10
-  - F11
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:mouse-right-click-outline$$
-  - '&mkp MB4'
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - RGB SPI
+  - RGB SPD
+  - RGB SAI
+  - RGB SAD
+  - RGB HUI
+  - RGB HUD
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
@@ -175,12 +175,12 @@ layers:
   - $$mdi:mouse-right-click-outline$$
   - PRINTSCREEN
   - F12
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:progress-download$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '&mkp MB5'
+  - '&studio_unlock'
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - $$mdi:bluetooth-off$$
+  - BT CLR ALL
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -198,3 +198,37 @@ layers:
 combos:
 - p: [2, 15]
   k: '@'
+- p: [14, 33]
+  k: $$mdi:keyboard-esc$$
+- p: [16, 25]
+  k: $$mdi:backspace-reverse-outline$$
+- p: [5, 18]
+  k: '%'
+- p: [17, 32]
+  k: KP EQUAL
+- p: [4, 17]
+  k: $
+- p: [3, 16]
+  k: '#'
+- p: [15, 30]
+  k: {t: \, s: '|'}
+- p: [30, 31]
+  k: COPY
+- p: [31, 32]
+  k: PASTE
+- p: [9, 24]
+  k: '*'
+- p: [24, 38]
+  k: KP SLASH
+- p: [8, 23]
+  k: +
+- p: [23, 37]
+  k: KP MINUS
+- p: [22, 36]
+  k: _
+- p: [23, 24]
+  k: (
+- p: [24, 25]
+  k: )
+- p: [1, 14]
+  k: '!'
