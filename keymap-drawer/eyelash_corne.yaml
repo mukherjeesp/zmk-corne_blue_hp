@@ -1,5 +1,5 @@
 layers:
-  Mukherjee:
+  CorneV4:
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -183,7 +183,7 @@ layers:
   - BT CLR ALL
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&soft_off'
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:progress-download$$
   - {t: '$$mdi:backup-restore$$', type: bootloader}
