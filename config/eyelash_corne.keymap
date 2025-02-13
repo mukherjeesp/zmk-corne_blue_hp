@@ -155,7 +155,7 @@
         compatible = "zmk,keymap";
 
         BASE {
-            display-name = "Mukherjee";
+            display-name = "CorneV4";
             bindings = <
 &kp TAB         &kp Q  &kp W  &kp E         &kp R  &kp T                             &kp UP                &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BSPC
 &kp LEFT_SHIFT  &kp A  &kp S  &kp D         &kp F  &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
@@ -163,7 +163,7 @@
                               &kp LEFT_WIN  &mo 1  &kp SPACE                                               &kp ENTER  &mo 2  &kp RALT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_DOWN C_AC_SCROLL_UP>;
+            sensor-bindings = <&scroll_encoder>;
         };
 
         NavNum {
@@ -195,7 +195,7 @@
             bindings = <
 &rgb_ug RGB_OFF  &rgb_ug RGB_ON   &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD                                &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &sys_reset
 &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
-&studio_unlock   &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_CLR       &bt BT_CLR_ALL   &kp C_MUTE                    &mmv MOVE_DOWN                   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
+&studio_unlock   &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_CLR       &bt BT_CLR_ALL   &kp C_MUTE                    &mmv MOVE_DOWN                   &soft_off    &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
                                                    &trans           &trans           &trans                                                                          &trans       &trans     &trans
             >;
 
