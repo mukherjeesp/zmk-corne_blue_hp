@@ -24,6 +24,10 @@
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
 
+&inc_dec_kp {
+    bindings = <&kp>, <&kp>;
+};
+
 / {
     behaviors {
         td0: td0 {
@@ -31,6 +35,13 @@
             display-name = "Shift/Caps Lock Tap Dance";
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+        };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            label = "NEW_BEHAVIOR";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
         };
     };
 
@@ -199,7 +210,7 @@
                                                    &trans           &trans           &trans                                                                          &trans       &trans     &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&new_behavior SCRL_DOWN SCRL_UP>;
         };
     };
 
