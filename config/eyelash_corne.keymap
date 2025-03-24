@@ -174,7 +174,7 @@
                               &kp LEFT_WIN  &mo 1  &kp SPACE                                               &kp ENTER  &mo 2  &kp RALT
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
         };
 
         NavNum {
@@ -186,7 +186,7 @@
                                                      &kp LEFT_WIN   &trans     &kp SPACE                                                                     &kp ENTER     &trans        &kp N0
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         Symbol {
@@ -198,7 +198,7 @@
                                     &trans     &trans     &kp SPACE                                                             &kp RET    &trans    &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
         };
 
         Functions {
@@ -210,7 +210,7 @@
                                                    &trans           &trans           &trans                                                                          &trans       &trans     &trans
             >;
 
-            sensor-bindings = <&new_behavior SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
     };
 
