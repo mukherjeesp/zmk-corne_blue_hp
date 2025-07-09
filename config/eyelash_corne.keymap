@@ -26,6 +26,10 @@
     bindings = <&kp>, <&kp>;
 };
 
+&mt {
+    tapping-term-ms = <500>; // This is the value set for c to alt
+};
+
 / {
     behaviors {
         td0: td0 {
